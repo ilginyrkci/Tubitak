@@ -633,6 +633,7 @@ textarea::placeholder {
   }
 
   .login-panel {
+    order: -1;
     padding: 38px 28px 22px;
   }
 
