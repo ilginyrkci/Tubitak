@@ -33,10 +33,6 @@ export default function Login({ password, setPassword, error, onSubmit, lang, on
 
   return (
     <div className="login-page min-h-screen">
-      <button type="button" onClick={onToggleLanguage} className="login-language">
-        {lang === "tr" ? "English" : "Türkçe"}
-      </button>
-
       <motion.main
         initial={{ opacity: 0, y: 14 }}
         animate={{ opacity: 1, y: 0 }}
@@ -78,8 +74,13 @@ export default function Login({ password, setPassword, error, onSubmit, lang, on
 
         <section className="login-panel">
           <div className="login-panel-content">
-            <span className="login-panel-icon"><LockKeyhole aria-hidden="true" /></span>
-            <p className="login-panel-kicker">{t.eyebrow}</p>
+            <div className="login-panel-heading">
+              <span className="login-panel-icon"><LockKeyhole aria-hidden="true" /></span>
+              <p className="login-panel-kicker">{t.eyebrow}</p>
+              <button type="button" onClick={onToggleLanguage} className="login-language">
+                {lang === "tr" ? "English" : "Türkçe"}
+              </button>
+            </div>
             <h2>{t.workspace}</h2>
             <p className="login-panel-description">{t.access}</p>
 

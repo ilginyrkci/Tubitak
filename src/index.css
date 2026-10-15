@@ -227,16 +227,14 @@ textarea::placeholder {
 }
 
 .login-language {
-  position: absolute;
-  top: 24px;
-  right: max(28px, calc((100vw - 1160px) / 2));
-  z-index: 1;
+  flex: 0 0 auto;
+  margin-left: auto;
   border: 1px solid #d7e2ef;
   border-radius: 999px;
-  padding: 9px 16px;
+  padding: 8px 13px;
   background: rgb(255 255 255 / 82%);
   color: #315f91;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 700;
   transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
 }
@@ -438,12 +436,19 @@ textarea::placeholder {
   margin: 0 auto;
 }
 
+.login-panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 31px;
+}
+
 .login-panel-icon {
   width: 48px;
   height: 48px;
+  flex: 0 0 auto;
   display: grid;
   place-items: center;
-  margin-bottom: 31px;
   border: 1px solid #dbe7f3;
   border-radius: 15px;
   background: #f1f6fb;
@@ -456,7 +461,7 @@ textarea::placeholder {
 }
 
 .login-panel-kicker {
-  margin-bottom: 10px;
+  margin: 0;
   color: #6e88a5;
 }
 
@@ -587,11 +592,6 @@ textarea::placeholder {
     padding: 76px 18px 24px;
   }
 
-  .login-language {
-    top: 19px;
-    right: 18px;
-  }
-
   .login-layout {
     width: min(100%, 520px);
     min-height: auto;
@@ -640,6 +640,10 @@ textarea::placeholder {
   .login-panel-icon {
     width: 42px;
     height: 42px;
+  }
+
+  .login-panel-heading {
+    gap: 10px;
     margin-bottom: 22px;
   }
 
