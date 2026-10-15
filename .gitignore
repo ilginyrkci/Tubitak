@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+*.local
+extracted-*.txt
+_extract*.js
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+!.env.example
+
+.vercel
+.env*
